@@ -46,7 +46,7 @@ class SensorTagParser(HTMLParser):
                 self.sensor_data.temperature = data[2]
                 self.sensor_data.ir_temperature = data[3]
             elif self.sensor_type == 'hum':
-                self.sensor_data.humidity = data[3]
+                self.sensor_data.humidity = data[2]
             elif self.sensor_type == 'bar':
                 self.sensor_data.pressure = data[3]
             elif self.sensor_type == 'gyr':
